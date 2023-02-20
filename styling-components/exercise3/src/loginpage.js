@@ -29,7 +29,6 @@ export class LoginPage extends React.Component{
         const user=this.handleLogin()
         const myStyle={
             backgroundColor:user.password.length < 8 ? "red": "green"
-     
         }
         return(
             
