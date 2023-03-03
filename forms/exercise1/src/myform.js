@@ -10,7 +10,8 @@ export class InteractiveWelcome extends React.Component{
         
         this.setState(
             {username: event.target.value}
-            )
+        )
+
     }
 
     render() {
