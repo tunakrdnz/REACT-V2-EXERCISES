@@ -1,15 +1,18 @@
 import { useEffect,useState } from "react";
-import { UseGithubUser } from "./useGithubUser";
+import {useGithubUser} from './useGithubUser'
 
 export function GithubUserList () {
     const [name, setName] = useState([]);
-    const {data, fetchGithubUser} = UseGithubUser(name);
+    const {data, fetchGithubUser} = useGithubUser(name);
     const [list, setList] = useState([]);
 
     const handleGetUserData = (event) => {
-           event.preventDefault();
+           event.preventDefault() 
            fetchGithubUser(name)
-           setList([...list, data.name || data.login])
+           setList([
+            ...list, 
+            data.name || data.login,
+           ])
            
     }
 
