@@ -19,8 +19,8 @@ export function useUserInfo() {
     }
 
     return {
-        username: data.username,
-        password: data.password,
+        username: data.username || '',
+        password: data.password  || '',
         handleOnChange
     }
 }
