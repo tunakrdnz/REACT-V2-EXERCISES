@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
-export function useGithubUser() {
-    const[data, setData] = useState("");
+export function useGithubUser(username) {
+    const[data, setData] = useState(username);
 
     async function fetchGithubUser(username) {
         try {
