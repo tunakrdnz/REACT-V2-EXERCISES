@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { ClickCounter } from "./clickCounter";
-import { ShowGithubUser } from "./showGithubuser";
+import { ShowGithubUser } from "./showGithubUser";
 import { Welcome } from "./welcome";
 
 
