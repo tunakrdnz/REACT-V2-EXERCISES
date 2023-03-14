@@ -4,7 +4,7 @@ import { ShowGithubUser } from "./showGithubUser";
 import { Welcome } from "./welcome";
 
 
-export function App({name,username}) {
+export function App() {
     return(
         <div>
         
@@ -12,7 +12,7 @@ export function App({name,username}) {
           <Link to="/counter">Counter</Link>
           <Link to ="/:username">Username</Link>
           <Routes>
-            <Route path="/" element={<Welcome name={name}/>}/>
+            <Route path="/" element={<Welcome/>}/>
             <Route path="/counter" element={<ClickCounter/>}/>
             <Route path="/user/:username" element={<ShowGithubUser/>}/>
           </Routes>
@@ -20,4 +20,3 @@ export function App({name,username}) {
     )
 }
 
-//I can not see the usename ,and I can not find my wrong so please inform me about it!
